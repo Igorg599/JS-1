@@ -1,19 +1,20 @@
 "use strict";
 
-// const obj = {
-//     name: "Ivan",
-//     age: 11,
-//     isMarried: false
-// };
+const number0Films = +prompt('Сколько фильмов вы уже посмотрели?', '');
+const personalMovieDB={
+    count: number0Films,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-// console.log(obj.isMarried);
+const a=prompt('Один из последних просмотренных фильмов?', ''),
+        b=prompt('На сколько оцените его?', ''),
+        c=prompt('Один из последних просмотренных фильмов?', ''),
+        d=prompt('На сколько оцените его?', '');
 
-// const answers = [];
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-// answers[0] = prompt('Как ваше имя?', '');
-// answers[1] = prompt('Как вашf фамилия?', '');
-// answers[2] = prompt('сколько вам лет?', '');
-
-// document.write(answers);
-const user = "Ivan";
-alert(`Hi, ${user}`);
+console.log(personalMovieDB);
